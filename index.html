@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Route</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #212529;
+    }
+    header {
+      background: #002b45;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    footer {
+      background: #dee2e6;
+      color: #495057;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    input, textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #002b45;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .hero-image, .extra-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .disclaimer {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚗 Prime Route</h1>
+    <p>Airport to Car. Fast. Personal. Reliable.</p>
+  </header>
+
+  <img src="https://images.unsplash.com/photo-1605383174340-f1e6c8b1fc9b" alt="Luxury car transfer" class="hero-image">
+  <img src="https://images.unsplash.com/photo-1491666022681-66038f104cb0" alt="Airplane at airport" class="extra-image">
+  <img src="https://images.unsplash.com/photo-1515548211361-5521f46f468f" alt="Car interior comfort" class="extra-image">
+
+  <section class="disclaimer">
+    <strong>Important Legal Notice:</strong>
+    Prime Route is an independent transportation service operating under the Dutch Chamber of Commerce as a registered eenmanszaak. We are not affiliated with, or subcontracted by, any ride-hailing platform or taxi organization. Our services are provided by reservation only, tailored to individual clients, and conducted under freelance (ZZP) contracts.
+  </section>
+
+  <section>
+    <h2>What We Do</h2>
+    <p>Prime Route offers private transportation from Dutch airports to your parked vehicle. Whether it's a private garage, a parking lot, or another destination, we take you there with comfort and discretion. Custom rides, scheduled pickups, and 24/7 availability upon reservation.</p>
+  </section>
+
+  <section>
+    <h2>Our Values</h2>
+    <ul>
+      <li><strong>Punctuality:</strong> Always on time, every time.</li>
+      <li><strong>Comfort:</strong> Enjoy a smooth, private ride in clean and spacious vehicles.</li>
+      <li><strong>Kindness & Service:</strong> A warm and helpful approach, every trip.</li>
+      <li><strong>Trust:</strong> Safe, reliable and consistent service.</li>
+    </ul>
+    <p>We speak English, Dutch and Spanish. Special transfers available for families with children or passengers with pets.</p>
+  </section>
+
+  <section>
+    <h2>Estimated Prices</h2>
+    <p><em>All prices are indicative and may vary depending on traffic, time of day, and additional services.</em></p>
+    <table>
+      <tr><th>Route</th><th>From</th></tr>
+      <tr><td>Schiphol → Hoofddorp (15km)</td><td>€60</td></tr>
+      <tr><td>Schiphol → Utrecht (50km)</td><td>€95</td></tr>
+      <tr><td>Eindhoven → Tilburg (35km)</td><td>€85</td></tr>
+      <tr><td>Rotterdam Airport → The Hague (20km)</td><td>€70</td></tr>
+      <tr><td>Schiphol → Amsterdam City Center (17km)</td><td>€65</td></tr>
+      <tr><td>Eindhoven → Den Bosch (35km)</td><td>€80</td></tr>
+      <tr><td>Night transfers (22:00–06:00)</td><td>+€15 surcharge</td></tr>
+      <tr><td>Round-trip transfer</td><td>€100–160</td></tr>
+      <tr><td>Including waiting time</td><td>+€15 per 30min</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <ul>
+      <li><strong>Do you operate at night?</strong> Yes, 24/7 with advance booking. Night rides (22:00–06:00) include a €15 surcharge.</li>
+      <li><strong>Can I book in Spanish or Dutch?</strong> Absolutely. We serve in English, Dutch and Spanish.</li>
+      <li><strong>Do you allow pets or kids?</strong> Yes. Please mention it in your booking comments so we can prepare accordingly.</li>
+      <li><strong>How is payment made?</strong> Payment is made in advance after receiving the corresponding invoice via email.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Book Your Transfer</h2>
+    <form action="mailto:primeroute.nl@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" placeholder="Full Name" name="name" required />
+      <input type="tel" placeholder="Phone" name="phone" required />
+      <input type="email" placeholder="Email" name="email" required />
+      <input type="datetime-local" name="datetime" required />
+      <input type="text" placeholder="Airport" name="airport" required />
+      <input type="text" placeholder="Destination Address" name="destination" required />
+      <textarea placeholder="Additional Comments" name="comments"></textarea>
+      <button type="submit">Request Transfer</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> primeroute.nl@gmail.com</p>
+    <p><strong>Phone:</strong> +31 627121828</p>
+    <p><strong>Location:</strong> Based in Amsterdam, operating across the Netherlands.</p>
+  </section>
+</body>
+</html>
